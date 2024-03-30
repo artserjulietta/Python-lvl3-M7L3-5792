@@ -22,3 +22,4 @@ def test_calculate_unknown_operation():
     assert calculate(5, 5, 'unknown') == "Ошибка: Неизвестная операция."
 
 
+
