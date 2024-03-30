@@ -4,12 +4,7 @@
     <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
       <option name="ignoredIdentifiers">
         <list>
-          <option value="test.word" />
-          <option value="test.self" />
-          <option value="test.word_to_translate" />
-          <option value="rt.db_name" />
-          <option value="rt.bot" />
-          <option value="rt.*" />
+
         </list>
       </option>
     </inspection_tool>
