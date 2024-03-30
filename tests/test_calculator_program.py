@@ -10,6 +10,9 @@ def test_calculate_division():
 def test_calculate_unknown_operation():
     assert calculate(5, 5, 'unknown') == "Неизвестная операция."
 
+def test_calculate_umno_operation():
+    assert calculate(5, 5, '*') == 25
+
 '''
 Задача. В настоящий момент реализовано три unit-теста
 Проверяется корректность работы калькулятора для действий сложения, деления и неизвестной операции
