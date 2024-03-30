@@ -18,3 +18,6 @@ def test_calculate_unknown_operation():
 
 def test_calculate_divide_by_zero():
     assert calculate(10, 0, '/') == "Ошибка: Деление на ноль."
+
+def test_calculate_minos():
+    assert calculate(5, -5, '+') == "0"
