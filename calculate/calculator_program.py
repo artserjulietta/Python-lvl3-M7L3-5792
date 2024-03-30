@@ -1,4 +1,10 @@
 def calculate(num1, num2, operation):
+    try:
+        num1 = float(num1)
+        num2 = float(num2)
+    except ValueError:
+        return "Ошибка: Введите числа."
+
     if operation == '+':
         return num1 + num2
     elif operation == '-':
@@ -11,17 +17,11 @@ def calculate(num1, num2, operation):
         else:
             return "Ошибка: Деление на ноль."
     else:
-        return "Неизвестная операция."
-
+        return "Ошибка: Неизвестная операция."
 
 def main():
     print("Простой калькулятор. Введите два числа и выберите операцию.")
-    num1 = float(input("Введите первое число: "))
-    num2 = float(input("Введите второе число: "))
+    num1 = input("Введите первое число: ")
+    num2 = input("Введите второе число: ")
     operation = input("Выберите операцию (+, -, *, /): ")
-    result = calculate(num1, num2, operation)
-    print(f"Результат: {result}")
-
-
-if __name__ == "__main__":
-    main()
+    result = calculate(num1)
